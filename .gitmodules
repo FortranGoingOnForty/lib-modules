@@ -34,3 +34,7 @@
 	path = packages/fgof-proc-test
 	url = ../fgof-proc-test
 	branch = trunk
+[submodule "packages/fgof-temp"]
+	path = packages/fgof-temp
+	url = ../fgof-temp
+	branch = trunk
