@@ -1,4 +1,4 @@
-# FortranGoingOnForty Lib Modules
+# lib-modules
 
 This repository is the umbrella catalog for reusable Fortran packages developed under the `FortranGoingOnForty` umbrella.
 
@@ -11,6 +11,14 @@ The goal is:
 - collect those package repos here as Git submodules under `packages/`
 
 That gives us the discoverability and organization benefits of one home page without burying every package inside a giant top-level repo.
+
+Start here if you want the big-picture package map:
+
+- [LANDSCAPE.md](LANDSCAPE.md)
+
+Go straight to the first standalone package if you already know what you want:
+
+- [fgof-process](https://github.com/FortranGoingOnForty/fgof-process)
 
 ## Why This Structure
 
@@ -48,13 +56,23 @@ lib-modules/
 
 | Package | Status | Repo Model | Notes |
 | --- | --- | --- | --- |
-| `fgof-process` | scaffolded | standalone repo + submodule | first package target, mounted at `packages/fgof-process` |
+| [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | active | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
 
 As packages are created:
 
 - each package gets its own repository
 - each package is added here under `packages/` as a submodule
 - this table should be updated with its repo URL and current status
+
+## How To Use This Repo
+
+Clone the umbrella repo when you want the catalog, landscape docs, and package submodules together:
+
+```bash
+git clone --recurse-submodules git@github.com:FortranGoingOnForty/lib-modules.git
+```
+
+Go directly to an individual package repo when you only want one library.
 
 ## Working Rules
 
@@ -68,4 +86,4 @@ As packages are created:
 
 The first package planned for this umbrella is `fgof-process`, a POSIX-first process and subprocess library for modern Fortran applications.
 
-See [LANDSCAPE.md](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/lib-modules/LANDSCAPE.md:1) for the broader ecosystem assessment and package backlog.
+See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
