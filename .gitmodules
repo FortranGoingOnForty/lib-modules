@@ -18,3 +18,7 @@
 	path = packages/fgof-watch
 	url = ../fgof-watch
 	branch = trunk
+[submodule "packages/fgof-termios"]
+	path = packages/fgof-termios
+	url = ../fgof-termios
+	branch = trunk
