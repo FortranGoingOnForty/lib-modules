@@ -14,6 +14,7 @@ Current submodules:
 
 - `fgof-process`
 - `fgof-fs`
+- `fgof-pty`
 
 Rules:
 
