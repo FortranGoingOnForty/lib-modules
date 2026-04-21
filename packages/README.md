@@ -11,6 +11,7 @@ packages/fgof-pty
 packages/fgof-lineedit
 packages/fgof-watch
 packages/fgof-termios
+packages/fgof-keys
 ```
 
 Current submodules:
@@ -21,6 +22,7 @@ Current submodules:
 - `fgof-lineedit`
 - `fgof-watch`
 - `fgof-termios`
+- `fgof-keys`
 
 Rules:
 

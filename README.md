@@ -24,8 +24,9 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-lineedit](https://github.com/FortranGoingOnForty/fgof-lineedit)
 - [fgof-watch](https://github.com/FortranGoingOnForty/fgof-watch)
 - [fgof-termios](https://github.com/FortranGoingOnForty/fgof-termios)
+- [fgof-keys](https://github.com/FortranGoingOnForty/fgof-keys)
 
-The current next library target is `fgof-keys`, with `fgof-expect`,
+The current active library target is `fgof-keys`, with `fgof-expect`,
 `fgof-proc-test`, and `fgof-temp` close behind in the backlog.
 
 If you want local comparison checkouts for already-served or deferred areas,
@@ -76,6 +77,7 @@ lib-modules/
 | [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | released `v0.1.0` | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
 | [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch) | released `v0.1.0` | standalone repo + submodule | polling-first watch helpers, mounted at `packages/fgof-watch` |
 | [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios) | released `v0.1.0` | standalone repo + submodule | terminal mode helpers, mounted at `packages/fgof-termios` |
+| [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys) | scaffolded | standalone repo + submodule | terminal key decoding helpers, mounted at `packages/fgof-keys` |
 
 As packages are created:
 
@@ -109,5 +111,6 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit): Fortran-native line editing helpers for interactive CLIs
 - [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch): polling-first watch helpers for tools and dev loops
 - [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios): terminal mode helpers for interactive tools
+- [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys): terminal key decoding helpers for interactive tools
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
