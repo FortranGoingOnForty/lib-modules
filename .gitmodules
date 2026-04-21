@@ -26,3 +26,7 @@
 	path = packages/fgof-keys
 	url = ../fgof-keys
 	branch = trunk
+[submodule "packages/fgof-expect"]
+	path = packages/fgof-expect
+	url = ../fgof-expect
+	branch = trunk
