@@ -10,3 +10,7 @@
 	path = packages/fgof-pty
 	url = ../fgof-pty
 	branch = trunk
+[submodule "packages/fgof-lineedit"]
+	path = packages/fgof-lineedit
+	url = ../fgof-lineedit
+	branch = trunk
