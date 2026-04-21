@@ -23,6 +23,8 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-pty](https://github.com/FortranGoingOnForty/fgof-pty)
 - [fgof-lineedit](https://github.com/FortranGoingOnForty/fgof-lineedit)
 
+The current next library target is `fgof-watch`, with `fgof-termios` and `fgof-keys` close behind in the backlog.
+
 ## Why This Structure
 
 This repo exists to answer two different needs cleanly:
@@ -60,10 +62,10 @@ lib-modules/
 
 | Package | Status | Repo Model | Notes |
 | --- | --- | --- | --- |
-| [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | active | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
-| [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs) | active | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
-| [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | active | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
-| [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | scaffolded | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
+| [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | released `v0.1.0` | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
+| [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs) | released `v0.1.0` | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
+| [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | released `v0.1.0` | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
+| [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | released `v0.1.0` | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
 
 As packages are created:
 

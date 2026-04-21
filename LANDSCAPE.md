@@ -14,6 +14,8 @@ Package names in this document are provisional and only meant to make the backlo
 
 Candidate count: `48`
 
+Status note: `fgof-process`, `fgof-fs`, `fgof-pty`, and `fgof-lineedit` have now shipped as `v0.1.0` packages. They remain in the backlog tables as completed reference points so the original scoring context stays visible.
+
 ## Contents
 
 - [Executive Summary](#executive-summary)
@@ -30,6 +32,7 @@ Candidate count: `48`
 
 ### What The Current Landscape Looks Like
 
+- The first FortranGoingOnForty wave is now real, not hypothetical: `fgof-process`, `fgof-fs`, `fgof-pty`, and `fgof-lineedit` are shipped and establish a credible baseline for process, filesystem, PTY, and interactive editing work.
 - The official package index already has credible coverage for config and serialization formats, CLI parsing, logging, regex, ncurses bindings, raw POSIX wrappers, SQLite bindings, libcurl bindings, compression bindings, and many scientific utilities.
 - `stdlib` is also expanding into general-purpose territory. Its published scope includes utilities, logging, strings, containers, and OS or environment integration, and the current `stdlib_system` spec already covers path operations plus synchronous and asynchronous process execution.
 - The big gap is not "nothing exists." The big gap is that many systems-oriented areas are still split between:
@@ -40,50 +43,65 @@ Candidate count: `48`
 
 ### Highest-Signal Conclusion
 
-The strongest opportunity is still the same cluster:
+The first wave is now shipped:
 
-1. filesystem ergonomics
-2. subprocess and process control
-3. PTY and terminal state control
-4. file watching
+1. subprocess and process control via `fgof-process`
+2. filesystem ergonomics via `fgof-fs`
+3. PTY session control via `fgof-pty`
+4. line editing primitives via `fgof-lineedit`
+
+The strongest remaining opportunity cluster now looks like:
+
+1. file watching
+2. terminal state and key normalization
+3. expect-style testing and process-test tooling
+4. temp, cache, clipboard, and app-state helpers
 5. archive and compression ergonomics
-6. platform helpers like clipboard, "open with default app", temp files, and app-state persistence
 
 These are the places where:
 
 - real apps need the functionality repeatedly
-- the Fortran ecosystem has pieces, but not yet an obvious default
+- the Fortran ecosystem still lacks an obvious default
 - your own codebase already contains extractable proof that the need is real
 
 ### Top Gaps
 
-- There is no obvious "default" app-author-friendly filesystem toolkit for Fortran even though filesystem APIs are actively being discussed and implemented in `stdlib`.
-- There is no obvious default high-level subprocess library with the kind of DX people expect from Python's `subprocess`, Rust's `std::process`, or Go's `exec`.
-- PTY and interactive terminal work remains very underpackaged despite being crucial for shells, terminal emulators, test harnesses, and text UIs.
-- File watching looks especially under-served: there are tools around the ecosystem, but no obvious reusable Fortran library that normal app authors would pull in.
-- Compression and archive support exists mostly as low-level bindings, not as a clean general-purpose package surface.
-- Persistent local app state, cache management, and workspace-state helpers are still mostly hand-rolled.
+- File watching still looks like the single biggest remaining library hole: there are tools around the ecosystem, but no obvious reusable Fortran default that normal app authors would pull in.
+- Terminal mode handling and key decoding are still brittle, low-level, and repeatedly reinvented across interactive apps.
+- Expect-style PTY automation and process-test tooling remain unusually thin despite clear value for shells, TUIs, and CI.
+- Temp files, clipboard helpers, cache helpers, and app-state persistence are still mostly hand-rolled even though they are common practical needs.
+- Compression and archive support still exists mostly as bindings rather than as a small ergonomic package surface.
+- SQLite and local-data ergonomics remain promising, but they now look like a second-tier priority behind watch and interactive tooling.
 
-### Strongest Bets Right Now
+### Shipped First Wave
 
-These are the best "start here" candidates if the goal is maximum ecosystem value rather than novelty for its own sake.
+These packages are no longer just candidates. They are shipped `v0.1.0` packages and form the current baseline of the library family.
+
+| Project | What It Covers | Repo |
+| --- | --- | --- |
+| `fgof-process` | argv-first subprocess helpers, capture, cwd and env overrides, timeouts | [fgof-process](https://github.com/FortranGoingOnForty/fgof-process) |
+| `fgof-fs` | paths, metadata, traversal, copy or move, lookup helpers | [fgof-fs](https://github.com/FortranGoingOnForty/fgof-fs) |
+| `fgof-pty` | PTY sessions, reads or writes, resize, lifecycle helpers | [fgof-pty](https://github.com/FortranGoingOnForty/fgof-pty) |
+| `fgof-lineedit` | line editing core, history, actions, completions, render snapshots | [fgof-lineedit](https://github.com/FortranGoingOnForty/fgof-lineedit) |
+
+### Strongest Remaining Bets Right Now
+
+These are the best "start here next" candidates now that the first wave exists.
 
 Scores are `Impact / Gap severity / Feasibility / Local leverage / Maintenance burden`. Lower maintenance burden is better.
 
 | Project | Why It Stands Out | Existing Leverage | Scores | Verdict |
 | --- | --- | --- | --- | --- |
-| `fgof-process` | Repeated need across shells, CLIs, test tools, and editors; current options are fragmented | [fortsh system interface](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fortsh/src/system/interface.f90:1) | `5/5/4/5/3` | Strong candidate |
-| `fgof-pty` | Rarely packaged well in Fortran, but essential for interactive tooling | [fifftty PTY manager](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fifftty/src/pty_manager.f90:1), `fortsh` interactive tests | `5/5/4/5/4` | Strong candidate |
-| `fgof-fs` | Biggest general-purpose gap after processes; would benefit multiple app types immediately | [sniffert file system](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/sniffert/src/file_system.f90:1), [fortress filesystem ops](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fortress/src/filesystem/fs_ops.f90:1) | `5/5/4/5/3` | Strong candidate |
 | `fgof-watch` | Genuine ecosystem hole; useful for dev loops, editors, sync tools, live reload | no obvious default local package yet | `5/5/3/3/4` | Strong candidate |
-| `fgof-lineedit` | Shells and CLIs repeatedly need it; current options are narrow or app-local | `fortsh` readline stack, editor input work | `5/5/4/5/4` | Strong candidate |
+| `fgof-termios` | Terminal mode handling is still low-level and easy to get wrong; it would strengthen the interactive stack immediately | [fortsh system interface](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fortsh/src/system/interface.f90:1), `fit` keyboard handling | `4/4/5/5/2` | Strong candidate |
 | `fgof-keys` | Terminal key handling is a pain point that many apps re-solve badly | `fit`, `fortsh`, `facsimile` input handling | `4/5/4/4/3` | Strong candidate |
+| `fgof-expect` | PTY automation is valuable for interactive testing, demos, and CI, and the local leverage is strong | [fifftty PTY manager](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fifftty/src/pty_manager.f90:1), `fortsh` interactive YAML specs | `4/5/4/5/3` | Strong candidate |
+| `fgof-proc-test` | Process-fixture tooling would be useful immediately on top of `fgof-process` | [fortsh system interface](/Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fortsh/src/system/interface.f90:1) and executor stack | `4/5/4/5/3` | Strong candidate |
 | `fgof-clipboard` | Small, very practical, and clearly underpackaged | local clipboard code in `facsimile` | `4/5/4/4/3` | Strong candidate |
 | `fgof-temp` | Temp files, temp dirs, atomic writes, and safe replacement show up everywhere | `fit`, `fortress`, `facsimile` backup flows | `4/4/5/4/2` | Strong candidate |
 | `fgof-cache` | Local caches are useful for tools and usually hand-written badly | `fuss` cache module, command tooling | `4/5/4/4/2` | Strong candidate |
 | `fgof-state` | Workspace and session persistence is a repeated app need with no obvious default package | `facsimile` workspace vision | `4/5/5/4/2` | Strong candidate |
 | `fgof-sqlite` | Bindings exist, but an ergonomic layer would be broadly useful | existing SQLite bindings in ecosystem | `4/4/4/2/3` | Strong candidate |
-| `fgof-posix-core` | A curated binding layer would reduce reinvention across many future packages | `fortsh`, `sniffert`, `fit`, `fifftty` | `5/4/4/5/3` | Strong candidate |
 | `fgof-devloop` | There is already `fpm-watch` as a tool, but not a reusable library surface | process and watch primitives can feed it | `4/4/5/3/2` | Strong candidate |
 
 ### Crowded Or Lower-Priority Areas
@@ -379,15 +397,15 @@ Example:
 
 ### Practical Sequencing
 
-If you decide to build from this document later, the most sensible first-wave sequence looks like:
+With the first wave already shipped, the most sensible next-wave sequence now looks like:
 
-1. `fgof-posix-core`
-2. `fgof-fs`
-3. `fgof-process`
-4. `fgof-pty`
-5. `fgof-lineedit` or `fgof-watch`
+1. `fgof-watch`
+2. `fgof-termios`
+3. `fgof-keys`
+4. `fgof-expect` or `fgof-proc-test`
+5. `fgof-temp` or `fgof-clipboard`
 
-That sequence maximizes reuse and minimizes duplicate low-level work.
+That sequence adds the most obvious missing value on top of what is already shipped without jumping too early into crowded territory.
 
 ## Local Extraction Evidence
 
