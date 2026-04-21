@@ -14,6 +14,7 @@ packages/fgof-termios
 packages/fgof-keys
 packages/fgof-expect
 packages/fgof-proc-test
+packages/fgof-temp
 ```
 
 Current submodules:
@@ -27,6 +28,7 @@ Current submodules:
 - `fgof-keys`
 - `fgof-expect`
 - `fgof-proc-test`
+- `fgof-temp`
 
 Rules:
 

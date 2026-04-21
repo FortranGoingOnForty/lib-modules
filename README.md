@@ -27,9 +27,10 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-keys](https://github.com/FortranGoingOnForty/fgof-keys)
 - [fgof-expect](https://github.com/FortranGoingOnForty/fgof-expect)
 - [fgof-proc-test](https://github.com/FortranGoingOnForty/fgof-proc-test)
+- [fgof-temp](https://github.com/FortranGoingOnForty/fgof-temp)
 
-The current active library target is `fgof-proc-test`, with `fgof-temp`,
-`fgof-screen`, and `fgof-clipboard` close behind in the backlog.
+The current active library target is `fgof-temp`, with `fgof-cache`,
+`fgof-clipboard`, and `fgof-screen` close behind in the backlog.
 
 If you want local comparison checkouts for already-served or deferred areas,
 use `./scripts/sync-refs.sh` to populate `.refs/` from the curated reference
@@ -65,6 +66,7 @@ lib-modules/
     fgof-lineedit/    # git submodule
     fgof-expect/      # git submodule
     fgof-proc-test/   # git submodule
+    fgof-temp/        # git submodule
     ...
   scripts/
     add-package-submodule.sh
@@ -83,7 +85,8 @@ lib-modules/
 | [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios) | released `v0.1.0` | standalone repo + submodule | terminal mode helpers, mounted at `packages/fgof-termios` |
 | [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys) | released `v0.1.0` | standalone repo + submodule | terminal key decoding helpers, mounted at `packages/fgof-keys` |
 | [`fgof-expect`](https://github.com/FortranGoingOnForty/fgof-expect) | released `v0.1.0` | standalone repo + submodule | expect-style PTY automation helpers, mounted at `packages/fgof-expect` |
-| [`fgof-proc-test`](https://github.com/FortranGoingOnForty/fgof-proc-test) | scaffolded | standalone repo + submodule | process-test fixtures, mounted at `packages/fgof-proc-test` |
+| [`fgof-proc-test`](https://github.com/FortranGoingOnForty/fgof-proc-test) | released `v0.1.0` | standalone repo + submodule | process-test fixtures, mounted at `packages/fgof-proc-test` |
+| [`fgof-temp`](https://github.com/FortranGoingOnForty/fgof-temp) | scaffolded | standalone repo + submodule | temp files, temp dirs, and atomic write helpers, mounted at `packages/fgof-temp` |
 
 As packages are created:
 
@@ -120,5 +123,6 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys): terminal key decoding helpers for interactive tools
 - [`fgof-expect`](https://github.com/FortranGoingOnForty/fgof-expect): expect-style PTY automation helpers for interactive tools and tests
 - [`fgof-proc-test`](https://github.com/FortranGoingOnForty/fgof-proc-test): process-test fixtures for command-line tools and integration suites
+- [`fgof-temp`](https://github.com/FortranGoingOnForty/fgof-temp): temp files, temp directories, and atomic write helpers
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
