@@ -22,3 +22,7 @@
 	path = packages/fgof-termios
 	url = ../fgof-termios
 	branch = trunk
+[submodule "packages/fgof-keys"]
+	path = packages/fgof-keys
+	url = ../fgof-keys
+	branch = trunk
