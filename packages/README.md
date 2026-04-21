@@ -12,6 +12,7 @@ packages/fgof-lineedit
 packages/fgof-watch
 packages/fgof-termios
 packages/fgof-keys
+packages/fgof-expect
 ```
 
 Current submodules:
@@ -23,6 +24,7 @@ Current submodules:
 - `fgof-watch`
 - `fgof-termios`
 - `fgof-keys`
+- `fgof-expect`
 
 Rules:
 

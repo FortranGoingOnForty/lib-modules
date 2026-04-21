@@ -25,9 +25,10 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-watch](https://github.com/FortranGoingOnForty/fgof-watch)
 - [fgof-termios](https://github.com/FortranGoingOnForty/fgof-termios)
 - [fgof-keys](https://github.com/FortranGoingOnForty/fgof-keys)
+- [fgof-expect](https://github.com/FortranGoingOnForty/fgof-expect)
 
-The current active library target is `fgof-keys`, with `fgof-expect`,
-`fgof-proc-test`, and `fgof-temp` close behind in the backlog.
+The current active library target is `fgof-expect`, with `fgof-proc-test`,
+`fgof-temp`, and `fgof-screen` close behind in the backlog.
 
 If you want local comparison checkouts for already-served or deferred areas,
 use `./scripts/sync-refs.sh` to populate `.refs/` from the curated reference
@@ -61,6 +62,7 @@ lib-modules/
     fgof-fs/          # git submodule
     fgof-pty/         # git submodule
     fgof-lineedit/    # git submodule
+    fgof-expect/      # git submodule
     ...
   scripts/
     add-package-submodule.sh
@@ -77,7 +79,8 @@ lib-modules/
 | [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | released `v0.1.0` | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
 | [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch) | released `v0.1.0` | standalone repo + submodule | polling-first watch helpers, mounted at `packages/fgof-watch` |
 | [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios) | released `v0.1.0` | standalone repo + submodule | terminal mode helpers, mounted at `packages/fgof-termios` |
-| [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys) | scaffolded | standalone repo + submodule | terminal key decoding helpers, mounted at `packages/fgof-keys` |
+| [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys) | released `v0.1.0` | standalone repo + submodule | terminal key decoding helpers, mounted at `packages/fgof-keys` |
+| [`fgof-expect`](https://github.com/FortranGoingOnForty/fgof-expect) | scaffolded | standalone repo + submodule | expect-style PTY automation helpers, mounted at `packages/fgof-expect` |
 
 As packages are created:
 
@@ -112,5 +115,6 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch): polling-first watch helpers for tools and dev loops
 - [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios): terminal mode helpers for interactive tools
 - [`fgof-keys`](https://github.com/FortranGoingOnForty/fgof-keys): terminal key decoding helpers for interactive tools
+- [`fgof-expect`](https://github.com/FortranGoingOnForty/fgof-expect): expect-style PTY automation helpers for interactive tools and tests
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
