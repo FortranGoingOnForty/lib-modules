@@ -25,7 +25,12 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-watch](https://github.com/FortranGoingOnForty/fgof-watch)
 - [fgof-termios](https://github.com/FortranGoingOnForty/fgof-termios)
 
-The current next library target is `fgof-termios`, with `fgof-keys` and `fgof-expect` close behind in the backlog.
+The current next library target is `fgof-keys`, with `fgof-expect`,
+`fgof-proc-test`, and `fgof-temp` close behind in the backlog.
+
+If you want local comparison checkouts for already-served or deferred areas,
+use `./scripts/sync-refs.sh` to populate `.refs/` from the curated reference
+set in [docs/REFERENCE-LIBS.md](docs/REFERENCE-LIBS.md).
 
 ## Why This Structure
 
@@ -58,6 +63,7 @@ lib-modules/
     ...
   scripts/
     add-package-submodule.sh
+    sync-refs.sh
 ```
 
 ## Package Catalog
@@ -69,7 +75,7 @@ lib-modules/
 | [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | released `v0.1.0` | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
 | [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | released `v0.1.0` | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
 | [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch) | released `v0.1.0` | standalone repo + submodule | polling-first watch helpers, mounted at `packages/fgof-watch` |
-| [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios) | scaffolded | standalone repo + submodule | terminal mode helpers, mounted at `packages/fgof-termios` |
+| [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios) | released `v0.1.0` | standalone repo + submodule | terminal mode helpers, mounted at `packages/fgof-termios` |
 
 As packages are created:
 
