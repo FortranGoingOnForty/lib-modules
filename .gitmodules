@@ -6,6 +6,3 @@
 	path = packages/fgof-fs
 	url = ../fgof-fs
 	branch = trunk
-[submodule "packages/fgof-fs"]
-	path = packages/fgof-fs
-	url = /Users/mfwolffe/GithubOrgs/FortranGoingOnForty/fgof-fs
