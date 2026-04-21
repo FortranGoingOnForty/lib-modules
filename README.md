@@ -57,7 +57,7 @@ lib-modules/
 | Package | Status | Repo Model | Notes |
 | --- | --- | --- | --- |
 | [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | active | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
-| `fgof-fs` | scaffolded | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
+| [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs) | scaffolded | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
 
 As packages are created:
 
@@ -85,7 +85,7 @@ Go directly to an individual package repo when you only want one library.
 
 ## Current Packages
 
-- `fgof-process`: POSIX-first process and subprocess helpers
-- `fgof-fs`: filesystem and path helpers
+- [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process): POSIX-first process and subprocess helpers
+- [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs): filesystem and path helpers
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
