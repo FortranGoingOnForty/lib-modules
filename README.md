@@ -22,8 +22,10 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-fs](https://github.com/FortranGoingOnForty/fgof-fs)
 - [fgof-pty](https://github.com/FortranGoingOnForty/fgof-pty)
 - [fgof-lineedit](https://github.com/FortranGoingOnForty/fgof-lineedit)
+- [fgof-watch](https://github.com/FortranGoingOnForty/fgof-watch)
+- [fgof-termios](https://github.com/FortranGoingOnForty/fgof-termios)
 
-The current next library target is `fgof-watch`, with `fgof-termios` and `fgof-keys` close behind in the backlog.
+The current next library target is `fgof-termios`, with `fgof-keys` and `fgof-expect` close behind in the backlog.
 
 ## Why This Structure
 
@@ -66,6 +68,8 @@ lib-modules/
 | [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs) | released `v0.1.0` | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
 | [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | released `v0.1.0` | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
 | [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | released `v0.1.0` | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
+| [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch) | released `v0.1.0` | standalone repo + submodule | polling-first watch helpers, mounted at `packages/fgof-watch` |
+| [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios) | scaffolded | standalone repo + submodule | terminal mode helpers, mounted at `packages/fgof-termios` |
 
 As packages are created:
 
@@ -97,5 +101,7 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs): filesystem and path helpers
 - [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty): POSIX-first PTY and terminal session helpers
 - [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit): Fortran-native line editing helpers for interactive CLIs
+- [`fgof-watch`](https://github.com/FortranGoingOnForty/fgof-watch): polling-first watch helpers for tools and dev loops
+- [`fgof-termios`](https://github.com/FortranGoingOnForty/fgof-termios): terminal mode helpers for interactive tools
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.

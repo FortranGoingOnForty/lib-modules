@@ -9,6 +9,8 @@ packages/fgof-process
 packages/fgof-fs
 packages/fgof-pty
 packages/fgof-lineedit
+packages/fgof-watch
+packages/fgof-termios
 ```
 
 Current submodules:
@@ -17,6 +19,8 @@ Current submodules:
 - `fgof-fs`
 - `fgof-pty`
 - `fgof-lineedit`
+- `fgof-watch`
+- `fgof-termios`
 
 Rules:
 
