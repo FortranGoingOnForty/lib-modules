@@ -6,3 +6,7 @@
 	path = packages/fgof-fs
 	url = ../fgof-fs
 	branch = trunk
+[submodule "packages/fgof-pty"]
+	path = packages/fgof-pty
+	url = ../fgof-pty
+	branch = trunk
