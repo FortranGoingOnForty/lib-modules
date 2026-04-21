@@ -14,3 +14,7 @@
 	path = packages/fgof-lineedit
 	url = ../fgof-lineedit
 	branch = trunk
+[submodule "packages/fgof-watch"]
+	path = packages/fgof-watch
+	url = ../fgof-watch
+	branch = trunk
