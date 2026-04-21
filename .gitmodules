@@ -1,3 +1,4 @@
 [submodule "packages/fgof-process"]
 	path = packages/fgof-process
 	url = ../fgof-process
+	branch = trunk
