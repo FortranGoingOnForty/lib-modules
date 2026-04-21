@@ -21,6 +21,7 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-process](https://github.com/FortranGoingOnForty/fgof-process)
 - [fgof-fs](https://github.com/FortranGoingOnForty/fgof-fs)
 - [fgof-pty](https://github.com/FortranGoingOnForty/fgof-pty)
+- [fgof-lineedit](https://github.com/FortranGoingOnForty/fgof-lineedit)
 
 ## Why This Structure
 
@@ -49,6 +50,7 @@ lib-modules/
     fgof-process/     # git submodule
     fgof-fs/          # git submodule
     fgof-pty/         # git submodule
+    fgof-lineedit/    # git submodule
     ...
   scripts/
     add-package-submodule.sh
@@ -60,7 +62,8 @@ lib-modules/
 | --- | --- | --- | --- |
 | [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | active | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
 | [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs) | active | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
-| [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | scaffolded | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
+| [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | active | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
+| [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | scaffolded | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
 
 As packages are created:
 
@@ -91,5 +94,6 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process): POSIX-first process and subprocess helpers
 - [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs): filesystem and path helpers
 - [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty): POSIX-first PTY and terminal session helpers
+- [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit): Fortran-native line editing helpers for interactive CLIs
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.

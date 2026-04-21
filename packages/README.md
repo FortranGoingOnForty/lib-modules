@@ -8,6 +8,7 @@ Each subdirectory here should be a standalone library repo, for example:
 packages/fgof-process
 packages/fgof-fs
 packages/fgof-pty
+packages/fgof-lineedit
 ```
 
 Current submodules:
@@ -15,6 +16,7 @@ Current submodules:
 - `fgof-process`
 - `fgof-fs`
 - `fgof-pty`
+- `fgof-lineedit`
 
 Rules:
 
