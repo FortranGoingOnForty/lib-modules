@@ -57,6 +57,7 @@ lib-modules/
 | Package | Status | Repo Model | Notes |
 | --- | --- | --- | --- |
 | [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | active | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
+| `fgof-fs` | scaffolded | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
 
 As packages are created:
 
@@ -82,8 +83,9 @@ Go directly to an individual package repo when you only want one library.
 - Cross-package dependencies should stay shallow and optional.
 - Every package should remain usable as a standalone `fpm` dependency.
 
-## First Package
+## Current Packages
 
-The first package planned for this umbrella is `fgof-process`, a POSIX-first process and subprocess library for modern Fortran applications.
+- `fgof-process`: POSIX-first process and subprocess helpers
+- `fgof-fs`: filesystem and path helpers
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.

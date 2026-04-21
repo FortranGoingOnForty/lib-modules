@@ -13,6 +13,7 @@ packages/fgof-pty
 Current submodules:
 
 - `fgof-process`
+- `fgof-fs`
 
 Rules:
 
