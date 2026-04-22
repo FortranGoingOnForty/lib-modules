@@ -38,3 +38,7 @@
 	path = packages/fgof-temp
 	url = ../fgof-temp
 	branch = trunk
+[submodule "packages/fgof-cache"]
+	path = packages/fgof-cache
+	url = ../fgof-cache
+	branch = trunk
