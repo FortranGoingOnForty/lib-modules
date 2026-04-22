@@ -42,3 +42,7 @@
 	path = packages/fgof-cache
 	url = ../fgof-cache
 	branch = trunk
+[submodule "packages/fgof-state"]
+	path = packages/fgof-state
+	url = ../fgof-state
+	branch = trunk
