@@ -17,6 +17,7 @@ packages/fgof-proc-test
 packages/fgof-temp
 packages/fgof-cache
 packages/fgof-state
+packages/fgof-clipboard
 ```
 
 Current submodules:
@@ -33,6 +34,7 @@ Current submodules:
 - `fgof-temp`
 - `fgof-cache`
 - `fgof-state`
+- `fgof-clipboard`
 
 Rules:
 

@@ -30,9 +30,10 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-temp](https://github.com/FortranGoingOnForty/fgof-temp)
 - [fgof-cache](https://github.com/FortranGoingOnForty/fgof-cache)
 - [fgof-state](https://github.com/FortranGoingOnForty/fgof-state)
+- [fgof-clipboard](https://github.com/FortranGoingOnForty/fgof-clipboard)
 
-The current active library target is `fgof-state`, with `fgof-clipboard`,
-`fgof-screen`, and `fgof-archive` close behind in the backlog.
+The current active library target is `fgof-clipboard`, with `fgof-screen`,
+`fgof-archive`, and `fgof-jobs` close behind in the backlog.
 
 If you want local comparison checkouts for already-served or deferred areas,
 use `./scripts/sync-refs.sh` to populate `.refs/` from the curated reference
@@ -71,6 +72,7 @@ lib-modules/
     fgof-temp/        # git submodule
     fgof-cache/       # git submodule
     fgof-state/       # git submodule
+    fgof-clipboard/   # git submodule
     ...
   scripts/
     add-package-submodule.sh
@@ -92,7 +94,8 @@ lib-modules/
 | [`fgof-proc-test`](https://github.com/FortranGoingOnForty/fgof-proc-test) | released `v0.1.0` | standalone repo + submodule | process-test fixtures, mounted at `packages/fgof-proc-test` |
 | [`fgof-temp`](https://github.com/FortranGoingOnForty/fgof-temp) | released `v0.1.0` | standalone repo + submodule | temp files, temp dirs, and atomic write helpers, mounted at `packages/fgof-temp` |
 | [`fgof-cache`](https://github.com/FortranGoingOnForty/fgof-cache) | released `v0.1.0` | standalone repo + submodule | disk cache helpers, mounted at `packages/fgof-cache` |
-| [`fgof-state`](https://github.com/FortranGoingOnForty/fgof-state) | scaffolded | standalone repo + submodule | persistent app and workspace state helpers, mounted at `packages/fgof-state` |
+| [`fgof-state`](https://github.com/FortranGoingOnForty/fgof-state) | released `v0.1.0` | standalone repo + submodule | persistent app and workspace state helpers, mounted at `packages/fgof-state` |
+| [`fgof-clipboard`](https://github.com/FortranGoingOnForty/fgof-clipboard) | scaffolded | standalone repo + submodule | clipboard text helpers, mounted at `packages/fgof-clipboard` |
 
 As packages are created:
 
@@ -132,5 +135,6 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-temp`](https://github.com/FortranGoingOnForty/fgof-temp): temp files, temp directories, and atomic write helpers
 - [`fgof-cache`](https://github.com/FortranGoingOnForty/fgof-cache): disk cache helpers for command-line tools and local developer workflows
 - [`fgof-state`](https://github.com/FortranGoingOnForty/fgof-state): persistent app and workspace state helpers
+- [`fgof-clipboard`](https://github.com/FortranGoingOnForty/fgof-clipboard): clipboard text helpers for command-line and interactive tools
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
