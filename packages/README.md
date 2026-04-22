@@ -18,6 +18,7 @@ packages/fgof-temp
 packages/fgof-cache
 packages/fgof-state
 packages/fgof-clipboard
+packages/fgof-screen
 ```
 
 Current submodules:
@@ -35,6 +36,7 @@ Current submodules:
 - `fgof-cache`
 - `fgof-state`
 - `fgof-clipboard`
+- `fgof-screen`
 
 Rules:
 
