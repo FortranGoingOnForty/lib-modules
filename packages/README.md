@@ -16,6 +16,7 @@ packages/fgof-expect
 packages/fgof-proc-test
 packages/fgof-temp
 packages/fgof-cache
+packages/fgof-state
 ```
 
 Current submodules:
@@ -31,6 +32,7 @@ Current submodules:
 - `fgof-proc-test`
 - `fgof-temp`
 - `fgof-cache`
+- `fgof-state`
 
 Rules:
 
