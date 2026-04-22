@@ -50,3 +50,7 @@
 	path = packages/fgof-clipboard
 	url = ../fgof-clipboard
 	branch = trunk
+[submodule "packages/fgof-screen"]
+	path = packages/fgof-screen
+	url = ../fgof-screen
+	branch = trunk
