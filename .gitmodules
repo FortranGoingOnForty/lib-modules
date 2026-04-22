@@ -46,3 +46,7 @@
 	path = packages/fgof-state
 	url = ../fgof-state
 	branch = trunk
+[submodule "packages/fgof-clipboard"]
+	path = packages/fgof-clipboard
+	url = ../fgof-clipboard
+	branch = trunk
