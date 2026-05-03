@@ -19,6 +19,7 @@ packages/fgof-cache
 packages/fgof-state
 packages/fgof-clipboard
 packages/fgof-screen
+packages/fgof-jobs
 ```
 
 Current submodules:
@@ -37,6 +38,7 @@ Current submodules:
 - `fgof-state`
 - `fgof-clipboard`
 - `fgof-screen`
+- `fgof-jobs`
 
 Rules:
 

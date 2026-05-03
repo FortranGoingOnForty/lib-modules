@@ -32,9 +32,10 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-state](https://github.com/FortranGoingOnForty/fgof-state)
 - [fgof-clipboard](https://github.com/FortranGoingOnForty/fgof-clipboard)
 - [fgof-screen](https://github.com/FortranGoingOnForty/fgof-screen)
+- [fgof-jobs](https://github.com/FortranGoingOnForty/fgof-jobs)
 
-The current active library target is `fgof-screen`, with `fgof-archive`
-and `fgof-jobs` close behind in the backlog.
+The current active library target is `fgof-jobs`, with `fgof-archive`
+and `fgof-sqlite` close behind in the backlog.
 
 If you want local comparison checkouts for already-served or deferred areas,
 use `./scripts/sync-refs.sh` to populate `.refs/` from the curated reference
@@ -75,6 +76,7 @@ lib-modules/
     fgof-state/       # git submodule
     fgof-clipboard/   # git submodule
     fgof-screen/      # git submodule
+    fgof-jobs/        # git submodule
     ...
   scripts/
     add-package-submodule.sh
@@ -98,7 +100,8 @@ lib-modules/
 | [`fgof-cache`](https://github.com/FortranGoingOnForty/fgof-cache) | released `v0.1.0` | standalone repo + submodule | disk cache helpers, mounted at `packages/fgof-cache` |
 | [`fgof-state`](https://github.com/FortranGoingOnForty/fgof-state) | released `v0.1.0` | standalone repo + submodule | persistent app and workspace state helpers, mounted at `packages/fgof-state` |
 | [`fgof-clipboard`](https://github.com/FortranGoingOnForty/fgof-clipboard) | released `v0.1.0` | standalone repo + submodule | clipboard text helpers, mounted at `packages/fgof-clipboard` |
-| [`fgof-screen`](https://github.com/FortranGoingOnForty/fgof-screen) | scaffolded | standalone repo + submodule | virtual screen buffer helpers, mounted at `packages/fgof-screen` |
+| [`fgof-screen`](https://github.com/FortranGoingOnForty/fgof-screen) | released `v0.1.0` | standalone repo + submodule | virtual screen buffer helpers, mounted at `packages/fgof-screen` |
+| [`fgof-jobs`](https://github.com/FortranGoingOnForty/fgof-jobs) | scaffolded | standalone repo + submodule | background job and wait-model helpers, mounted at `packages/fgof-jobs` |
 
 As packages are created:
 
@@ -140,5 +143,6 @@ Go directly to an individual package repo when you only want one library.
 - [`fgof-state`](https://github.com/FortranGoingOnForty/fgof-state): persistent app and workspace state helpers
 - [`fgof-clipboard`](https://github.com/FortranGoingOnForty/fgof-clipboard): clipboard text helpers for command-line and interactive tools
 - [`fgof-screen`](https://github.com/FortranGoingOnForty/fgof-screen): virtual screen buffer helpers for future TUIs and prompt layers
+- [`fgof-jobs`](https://github.com/FortranGoingOnForty/fgof-jobs): background job and wait-model helpers for shells, supervisors, and tool hosts
 
 See [LANDSCAPE.md](LANDSCAPE.md) for the broader ecosystem assessment and package backlog.
