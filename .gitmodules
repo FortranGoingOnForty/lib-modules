@@ -54,3 +54,7 @@
 	path = packages/fgof-screen
 	url = ../fgof-screen
 	branch = trunk
+[submodule "packages/fgof-jobs"]
+	path = packages/fgof-jobs
+	url = ../fgof-jobs
+	branch = trunk
