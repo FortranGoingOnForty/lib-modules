@@ -58,3 +58,7 @@
 	path = packages/fgof-jobs
 	url = ../fgof-jobs
 	branch = trunk
+[submodule "packages/fgof-devloop"]
+	path = packages/fgof-devloop
+	url = ../fgof-devloop
+	branch = trunk

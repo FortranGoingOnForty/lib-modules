@@ -20,6 +20,7 @@ packages/fgof-state
 packages/fgof-clipboard
 packages/fgof-screen
 packages/fgof-jobs
+packages/fgof-devloop
 ```
 
 Current submodules:
@@ -39,6 +40,7 @@ Current submodules:
 - `fgof-clipboard`
 - `fgof-screen`
 - `fgof-jobs`
+- `fgof-devloop`
 
 Rules:
 
