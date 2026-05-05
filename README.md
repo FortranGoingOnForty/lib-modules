@@ -104,7 +104,7 @@ lib-modules/
 | [`fgof-clipboard`](https://github.com/FortranGoingOnForty/fgof-clipboard) | released `v0.1.0` | standalone repo + submodule | clipboard text helpers, mounted at `packages/fgof-clipboard` |
 | [`fgof-screen`](https://github.com/FortranGoingOnForty/fgof-screen) | released `v0.1.0` | standalone repo + submodule | virtual screen buffer helpers, mounted at `packages/fgof-screen` |
 | [`fgof-jobs`](https://github.com/FortranGoingOnForty/fgof-jobs) | released `v0.1.0` | standalone repo + submodule | background job and wait-model helpers, mounted at `packages/fgof-jobs` |
-| [`fgof-devloop`](https://github.com/FortranGoingOnForty/fgof-devloop) | in development, Sprint 04 | standalone repo + submodule | watch-driven development loop helpers, mounted at `packages/fgof-devloop` |
+| [`fgof-devloop`](https://github.com/FortranGoingOnForty/fgof-devloop) | in development, Sprint 05 | standalone repo + submodule | watch-driven development loop helpers, mounted at `packages/fgof-devloop` |
 
 As packages are created:
 
