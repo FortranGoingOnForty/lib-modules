@@ -35,8 +35,8 @@ Go straight to the first standalone package if you already know what you want:
 - [fgof-jobs](https://github.com/FortranGoingOnForty/fgof-jobs)
 - [fgof-devloop](https://github.com/FortranGoingOnForty/fgof-devloop)
 
-The current active library target is `fgof-devloop`, with `fgof-archive`
-and `fgof-snapshot` close behind in the backlog.
+The most recently released library target is `fgof-devloop`, with
+`fgof-archive` and `fgof-snapshot` close behind in the backlog.
 
 If you want local comparison checkouts for already-served or deferred areas,
 use `./scripts/sync-refs.sh` to populate `.refs/` from the curated reference
@@ -89,7 +89,7 @@ lib-modules/
 
 | Package | Status | Repo Model | Notes |
 | --- | --- | --- | --- |
-| [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | released `v0.1.0` + trunk fix | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
+| [`fgof-process`](https://github.com/FortranGoingOnForty/fgof-process) | released `v0.1.1` | standalone repo + submodule | POSIX-first process helpers, mounted at `packages/fgof-process` |
 | [`fgof-fs`](https://github.com/FortranGoingOnForty/fgof-fs) | released `v0.1.0` | standalone repo + submodule | filesystem and path helpers, mounted at `packages/fgof-fs` |
 | [`fgof-pty`](https://github.com/FortranGoingOnForty/fgof-pty) | released `v0.1.0` | standalone repo + submodule | POSIX-first PTY helpers, mounted at `packages/fgof-pty` |
 | [`fgof-lineedit`](https://github.com/FortranGoingOnForty/fgof-lineedit) | released `v0.1.0` | standalone repo + submodule | Fortran-native line editing helpers, mounted at `packages/fgof-lineedit` |
@@ -104,7 +104,7 @@ lib-modules/
 | [`fgof-clipboard`](https://github.com/FortranGoingOnForty/fgof-clipboard) | released `v0.1.0` | standalone repo + submodule | clipboard text helpers, mounted at `packages/fgof-clipboard` |
 | [`fgof-screen`](https://github.com/FortranGoingOnForty/fgof-screen) | released `v0.1.0` | standalone repo + submodule | virtual screen buffer helpers, mounted at `packages/fgof-screen` |
 | [`fgof-jobs`](https://github.com/FortranGoingOnForty/fgof-jobs) | released `v0.1.0` | standalone repo + submodule | background job and wait-model helpers, mounted at `packages/fgof-jobs` |
-| [`fgof-devloop`](https://github.com/FortranGoingOnForty/fgof-devloop) | in development, Sprint 05 | standalone repo + submodule | watch-driven development loop helpers, mounted at `packages/fgof-devloop` |
+| [`fgof-devloop`](https://github.com/FortranGoingOnForty/fgof-devloop) | released `v0.1.0` | standalone repo + submodule | watch-driven development loop helpers, mounted at `packages/fgof-devloop` |
 
 As packages are created:
 
